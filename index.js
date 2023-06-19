@@ -63,8 +63,6 @@ app.get('/tickers', async (req, res) => {
           base_currency: token0,
           target_currency: token1,
           last_price: token0Price,
-          base_volume: '',
-          target_volume: '',
           pool_id:pairAddress,
           liquidity_in_usd: (token0Price * Number(reserves[0]/ 10 ** token0Decimals)) + (token1Price * Number(reserves[1]/ 10 ** token1Decimals)),
           bid: bid,
